@@ -16,6 +16,13 @@
   -ms-transition-delay: #{$count}s;
   transition-delay: #{$count}s;
 }
+@mixin border-radius($amount) {
+  -webkit-border-radius: $amount;
+  -moz-border-radius: $amount;
+  -o-border-radius: $amount;
+  -ms-border-radius: $amount;
+  border-radius: $amount;
+}
 
 // Variables
 // ----------------------------------------------------------->
@@ -27,6 +34,7 @@ $link5-location: translate(150px, 100px);
 $link6-location: translate(0px, 100px);
 $link7-location: translate(-150px, 100px);
 $link8-location: translate(-150px, 0px);
+$count: 0.1;
 
 // Lists
 // ----------------------------------------------------------->
@@ -83,6 +91,7 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
   @each $link in $links {
     &:hover ##{$link} {
       @include transform(translate_vertices($link));
+      @include border-radius(10px);
     }
   }
 }
@@ -93,8 +102,6 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
   width: 250px;
   height: 125px;
 }
-
-
 
 #link1, #link2, #link3, #link4, #link5, #link6, #link7, #link8 {
   @extend .ease-in-out;
@@ -108,7 +115,6 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
   z-index: 1;
 }
 
-$count: 0.1;
 @each $link in $links {
   ##{$link} { @include delay($count); }
   $count: $count + 0.1;
