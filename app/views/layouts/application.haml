@@ -1,11 +1,22 @@
 !!!
 %html
+  /[if lt IE 7 ] <html class="ie ie6" lang="en">
+  /[if IE 7 ] <html class="ie ie7" lang="en">
+  /[if IE 8 ] <html class="ie ie8" lang="en">
+  /[if (gte IE 9)|!(IE)] <html lang="en">
   %head
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
     %title Oh You Sassy
     = stylesheet_link_tag 'so_sassy', 'reset', 'text', '960'
     = javascript_include_tag 'application'
+    /[if lt IE 9] <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+    / %link{:rel => "shortcut icon", :href => "images/favicon.ico"}
+    / %link{:rel => "apple-touch-icon", :href => "images/apple-touch-icon.png"}
+    / %link{:rel => "apple-touch-icon", :sizes => "72x72", :href => "images/apple-touch-icon-72x72.png"}
+    / %link{:rel => "apple-touch-icon", :sizes => "114x114", :href => "images/apple-touch-icon-114x114.png"}
 
   %body
-    %section#content.container_16.auto-margin
-      = yield
+    .container_16
+      %section#content
+        = yield
