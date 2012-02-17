@@ -27,6 +27,9 @@ gem 'dm-core'
 # Padrino Stable Gem
 gem 'padrino', '0.10.5'
 
+# Heroku requirements
+gem 'therubyracer'
+
 # Or Padrino Edge
 # gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
 
