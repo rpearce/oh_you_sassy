@@ -7,6 +7,13 @@
   -moz-transform: $args;
   transform: $args;
 }
+@mixin delay($count) {
+  -webkit-transition-delay: #{$count}s;
+  -moz-transition-delay: #{$count}s;
+  -o-transition-delay: #{$count}s;
+  -ms-transition-delay: #{$count}s;
+  transition-delay: #{$count}s;
+}
 
 // Variables
 // ----------------------------------------------------------->
@@ -94,6 +101,8 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
   height: 125px;
 }
 
+
+
 #link1, #link2, #link3, #link4, #link5, #link6, #link7, #link8 {
   @extend .ease-in-out;
   @extend .translate-3d;
@@ -103,20 +112,11 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
   width: 20px;
   height: 20px;
   background: #0099FF;
-  z-index: -1;
+  z-index: 1;
 }
 
-// Need to figure out way to iterate through links list and add IDs to each one -rp
-// @each $link in $links {
-//   ##{$link} {
-//     @extend .ease-in-out;
-//     @extend .translate-3d;
-//     position: absolute;
-//     width: 20px;
-//     height: 20px;
-//     top: 108px;
-//     left: 190px;
-//     background: #0099FF;
-//     z-index: -1;
-//   }
-// }
+$count: 0.1;
+@each $link in $links {
+  ##{$link} { @include delay($count); }
+  $count: $count + 0.1;
+}
