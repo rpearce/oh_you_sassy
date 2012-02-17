@@ -1,0 +1,84 @@
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.ease-in-out, #logo-container, #logo, #link1, #link2, #link3, #link4, #link5, #link6, #link7, #link8 {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+
+.translate-3d, #link1, #link2, #link3, #link4, #link5, #link6, #link7, #link8 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+#logo-container {
+  position: absolute;
+  width: 400px;
+  height: 225px;
+  top: 200px;
+  left: 400px; }
+  #logo-container:hover {
+    opacity: 0.5; }
+  #logo-container:hover #link1 {
+    -webkit-transform: translate(-150px, -100px);
+    -moz-transform: translate(-150px, -100px);
+    transform: translate(-150px, -100px); }
+  #logo-container:hover #link2 {
+    -webkit-transform: translate(0px, -100px);
+    -moz-transform: translate(0px, -100px);
+    transform: translate(0px, -100px); }
+  #logo-container:hover #link3 {
+    -webkit-transform: translate(150px, -100px);
+    -moz-transform: translate(150px, -100px);
+    transform: translate(150px, -100px); }
+  #logo-container:hover #link4 {
+    -webkit-transform: translate(150px, 0px);
+    -moz-transform: translate(150px, 0px);
+    transform: translate(150px, 0px); }
+  #logo-container:hover #link5 {
+    -webkit-transform: translate(150px, 100px);
+    -moz-transform: translate(150px, 100px);
+    transform: translate(150px, 100px); }
+  #logo-container:hover #link6 {
+    -webkit-transform: translate(0px, 100px);
+    -moz-transform: translate(0px, 100px);
+    transform: translate(0px, 100px); }
+  #logo-container:hover #link7 {
+    -webkit-transform: translate(-150px, 100px);
+    -moz-transform: translate(-150px, 100px);
+    transform: translate(-150px, 100px); }
+  #logo-container:hover #link8 {
+    -webkit-transform: translate(-150px, 0px);
+    -moz-transform: translate(-150px, 0px);
+    transform: translate(-150px, 0px); }
+
+#logo {
+  position: relative;
+  width: 250px;
+  height: 125px;
+  margin-top: 55px; }
+
+#link1, #link2, #link3, #link4, #link5, #link6, #link7, #link8 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 108px;
+  left: 190px;
+  background: #0099FF;
+  z-index: -1; }

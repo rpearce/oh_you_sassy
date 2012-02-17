@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+    %title Oh You Sassy
+    = stylesheet_link_tag 'so_sassy', 'reset', 'text', '960'
+    = javascript_include_tag 'application'
+
+  %body
+    %section#content.container_16.auto-margin
+      = yield

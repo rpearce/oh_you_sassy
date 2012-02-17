@@ -1,0 +1,123 @@
+// Mixins
+// ----------------------------------------------------------->
+@mixin floating($direction) { float: $direction; }
+@mixin align($placement) { text-align: $placement; }
+@mixin transform($args) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  transform: $args;
+}
+
+// Variables
+// ----------------------------------------------------------->
+$link1: link1;
+$link2: link2;
+$link3: link3;
+$link4: link4;
+$link5: link5;
+$link6: link6;
+$link7: link7;
+$link8: link8;
+
+$link1-location: translate(-150px, -100px);
+$link2-location: translate(0px, -100px);
+$link3-location: translate(150px, -100px);
+$link4-location: translate(150px, 0px);
+$link5-location: translate(150px, 100px);
+$link6-location: translate(0px, 100px);
+$link7-location: translate(-150px, 100px);
+$link8-location: translate(-150px, 0px);
+
+// Lists
+// ----------------------------------------------------------->
+$links: $link1, $link2, $link3, $link4, $link5, $link6, $link7, $link8;
+$link-locations: $link1-location, $link2-location, $link3-location, $link4-location, $link5-location, $link6-location, $link7-location, $link8-location;
+
+// Functions
+// ----------------------------------------------------------->
+@function translate_vertices($link) {
+  @if $link == link1 { @return $link1-location }
+  @if $link == link2 { @return $link2-location }
+  @if $link == link3 { @return $link3-location }
+  @if $link == link4 { @return $link4-location }
+  @if $link == link5 { @return $link5-location }
+  @if $link == link6 { @return $link6-location }
+  @if $link == link7 { @return $link7-location }
+  @if $link == link8 { @return $link8-location }
+}
+
+// Classes
+// ----------------------------------------------------------->
+.left { @include floating(left); }
+.right { @include floating(right); }
+.text-center { @include align(center); }
+.text-left { @include align(left); }
+.text-right { @include align(right); }
+.ease-in-out {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.translate-3d {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+// IDs
+// ----------------------------------------------------------->
+#logo-container {
+  @extend .ease-in-out;
+  position: absolute;
+  width: 400px;
+  height: 225px;
+  top: 200px;
+  left: 400px;
+  &:hover { opacity: 0.5; }
+
+  @each $link in $links {
+    &:hover ##{$link} {
+      @include transform(translate_vertices($link));
+    }
+  }
+}
+
+#logo {
+  @extend .ease-in-out;
+  // position: absolute;
+  position: relative;
+  width: 250px;
+  height: 125px;
+  margin-top: 55px;
+}
+
+#link1, #link2, #link3, #link4, #link5, #link6, #link7, #link8 {
+  @extend .ease-in-out;
+  @extend .translate-3d;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 108px;
+  left: 190px;
+  background: #0099FF;
+  z-index: -1;
+}
+
+// Need to figure out way to iterate through links list and add IDs to each one -rp
+// @each $link in $links {
+//   ##{$link} {
+//     @extend .ease-in-out;
+//     @extend .translate-3d;
+//     position: absolute;
+//     width: 20px;
+//     height: 20px;
+//     top: 108px;
+//     left: 190px;
+//     background: #0099FF;
+//     z-index: -1;
+//   }
+// }
