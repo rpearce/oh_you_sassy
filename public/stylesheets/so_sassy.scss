@@ -86,12 +86,13 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
   margin-right: auto;
   width: 400px;
   height: 225px;
+  color: #0099FF;
   &:hover { opacity: 0.5; }
 
   @each $link in $links {
     &:hover ##{$link} {
       @include transform(translate_vertices($link));
-      //@include border-radius(7px);
+      @include border-radius(10px);
     }
   }
 }
@@ -109,11 +110,11 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
   position: fixed;
   margin-top: -70px;
   margin-left: 190px;
-  z-index: -1;
-  // padding: 2px;
-  // width: 35px;
-  // height: 22px;
-  // background: #0099FF;
+  width: 20px;
+  height: 20px;
+  background: #0099FF;
+  z-index: 1;
+  &:hover { color: #000; }
 }
 
 @each $link in $links {
