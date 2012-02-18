@@ -26,14 +26,14 @@
 
 // Variables
 // ----------------------------------------------------------->
-$link1-location: translate(-150px, -100px);
+$link1-location: translate(-160px, -100px);
 $link2-location: translate(0px, -100px);
 $link3-location: translate(150px, -100px);
 $link4-location: translate(150px, 0px);
 $link5-location: translate(150px, 100px);
 $link6-location: translate(0px, 100px);
-$link7-location: translate(-150px, 100px);
-$link8-location: translate(-150px, 0px);
+$link7-location: translate(-160px, 100px);
+$link8-location: translate(-160px, 0px);
 $count: 0.1;
 
 // Lists
@@ -91,7 +91,7 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
   @each $link in $links {
     &:hover ##{$link} {
       @include transform(translate_vertices($link));
-      @include border-radius(10px);
+      //@include border-radius(7px);
     }
   }
 }
@@ -109,10 +109,11 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
   position: fixed;
   margin-top: -70px;
   margin-left: 190px;
-  width: 20px;
-  height: 20px;
-  background: #0099FF;
-  z-index: 1;
+  z-index: -1;
+  // padding: 2px;
+  // width: 35px;
+  // height: 22px;
+  // background: #0099FF;
 }
 
 @each $link in $links {
