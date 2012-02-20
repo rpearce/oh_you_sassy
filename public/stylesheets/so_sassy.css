@@ -38,11 +38,11 @@
   #logo-container:hover {
     opacity: 0.5; }
   #logo-container:hover #link1 {
-    -webkit-transform: translate(-215px, -100px);
-    -moz-transform: translate(-215px, -100px);
-    -o-transform: translate(-215px, -100px);
-    -ms-transform: translate(-215px, -100px);
-    transform: translate(-215px, -100px);
+    -webkit-transform: translate(-215px, -155px);
+    -moz-transform: translate(-215px, -155px);
+    -o-transform: translate(-215px, -155px);
+    -ms-transform: translate(-215px, -155px);
+    transform: translate(-215px, -155px);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
@@ -52,11 +52,11 @@
     width: 80px;
     height: 80px; }
   #logo-container:hover #link2 {
-    -webkit-transform: translate(0px, -160px);
-    -moz-transform: translate(0px, -160px);
-    -o-transform: translate(0px, -160px);
-    -ms-transform: translate(0px, -160px);
-    transform: translate(0px, -160px);
+    -webkit-transform: translate(-30px, -155px);
+    -moz-transform: translate(-30px, -155px);
+    -o-transform: translate(-30px, -155px);
+    -ms-transform: translate(-30px, -155px);
+    transform: translate(-30px, -155px);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
@@ -66,11 +66,11 @@
     width: 80px;
     height: 80px; }
   #logo-container:hover #link3 {
-    -webkit-transform: translate(150px, -100px);
-    -moz-transform: translate(150px, -100px);
-    -o-transform: translate(150px, -100px);
-    -ms-transform: translate(150px, -100px);
-    transform: translate(150px, -100px);
+    -webkit-transform: translate(150px, -155px);
+    -moz-transform: translate(150px, -155px);
+    -o-transform: translate(150px, -155px);
+    -ms-transform: translate(150px, -155px);
+    transform: translate(150px, -155px);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
@@ -80,11 +80,11 @@
     width: 80px;
     height: 80px; }
   #logo-container:hover #link4 {
-    -webkit-transform: translate(150px, 0px);
-    -moz-transform: translate(150px, 0px);
-    -o-transform: translate(150px, 0px);
-    -ms-transform: translate(150px, 0px);
-    transform: translate(150px, 0px);
+    -webkit-transform: translate(150px, -35px);
+    -moz-transform: translate(150px, -35px);
+    -o-transform: translate(150px, -35px);
+    -ms-transform: translate(150px, -35px);
+    transform: translate(150px, -35px);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
@@ -94,11 +94,11 @@
     width: 80px;
     height: 80px; }
   #logo-container:hover #link5 {
-    -webkit-transform: translate(150px, 100px);
-    -moz-transform: translate(150px, 100px);
-    -o-transform: translate(150px, 100px);
-    -ms-transform: translate(150px, 100px);
-    transform: translate(150px, 100px);
+    -webkit-transform: translate(150px, 85px);
+    -moz-transform: translate(150px, 85px);
+    -o-transform: translate(150px, 85px);
+    -ms-transform: translate(150px, 85px);
+    transform: translate(150px, 85px);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
@@ -108,11 +108,11 @@
     width: 80px;
     height: 80px; }
   #logo-container:hover #link6 {
-    -webkit-transform: translate(0px, 100px);
-    -moz-transform: translate(0px, 100px);
-    -o-transform: translate(0px, 100px);
-    -ms-transform: translate(0px, 100px);
-    transform: translate(0px, 100px);
+    -webkit-transform: translate(-30px, 85px);
+    -moz-transform: translate(-30px, 85px);
+    -o-transform: translate(-30px, 85px);
+    -ms-transform: translate(-30px, 85px);
+    transform: translate(-30px, 85px);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
@@ -122,11 +122,11 @@
     width: 80px;
     height: 80px; }
   #logo-container:hover #link7 {
-    -webkit-transform: translate(-215px, 100px);
-    -moz-transform: translate(-215px, 100px);
-    -o-transform: translate(-215px, 100px);
-    -ms-transform: translate(-215px, 100px);
-    transform: translate(-215px, 100px);
+    -webkit-transform: translate(-215px, 85px);
+    -moz-transform: translate(-215px, 85px);
+    -o-transform: translate(-215px, 85px);
+    -ms-transform: translate(-215px, 85px);
+    transform: translate(-215px, 85px);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
@@ -136,11 +136,11 @@
     width: 80px;
     height: 80px; }
   #logo-container:hover #link8 {
-    -webkit-transform: translate(-215px, 0px);
-    -moz-transform: translate(-215px, 0px);
-    -o-transform: translate(-215px, 0px);
-    -ms-transform: translate(-215px, 0px);
-    transform: translate(-215px, 0px);
+    -webkit-transform: translate(-215px, -35px);
+    -moz-transform: translate(-215px, -35px);
+    -o-transform: translate(-215px, -35px);
+    -ms-transform: translate(-215px, -35px);
+    transform: translate(-215px, -35px);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
@@ -156,6 +156,11 @@
   height: 125px; }
 
 #link1, #link2, #link3, #link4, #link5, #link6, #link7, #link8 {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
   position: fixed;
   margin-top: -70px;
   margin-left: 190px;

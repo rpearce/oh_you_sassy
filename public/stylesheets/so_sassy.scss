@@ -26,14 +26,14 @@
 
 // Variables
 // ----------------------------------------------------------->
-$link1-location: translate(-215px, -100px);
-$link2-location: translate(0px, -160px);
-$link3-location: translate(150px, -100px);
-$link4-location: translate(150px, 0px);
-$link5-location: translate(150px, 100px);
-$link6-location: translate(0px, 100px);
-$link7-location: translate(-215px, 100px);
-$link8-location: translate(-215px, 0px);
+$link1-location: translate(-215px, -155px);
+$link2-location: translate(-30px, -155px);
+$link3-location: translate(150px, -155px);
+$link4-location: translate(150px, -35px);
+$link5-location: translate(150px, 85px);
+$link6-location: translate(-30px, 85px);
+$link7-location: translate(-215px, 85px);
+$link8-location: translate(-215px, -35px);
 $count: 0.1;
 
 // Lists
@@ -110,6 +110,7 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
 #link1, #link2, #link3, #link4, #link5, #link6, #link7, #link8 {
   @extend .ease-in-out;
   @extend .translate-3d;
+  @include border-radius(20px);
   position: fixed;
   margin-top: -70px;
   margin-left: 190px;
