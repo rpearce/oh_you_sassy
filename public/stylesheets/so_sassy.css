@@ -32,8 +32,8 @@
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
-  width: 400px;
-  height: 225px;
+  width: 500px;
+  height: 400px;
   color: #0099FF; }
   #logo-container:hover {
     opacity: 0.5; }
@@ -48,9 +48,8 @@
     -o-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
-    background: transparent;
-    width: 80px;
-    height: 80px; }
+    width: 81px;
+    height: 81px; }
   #logo-container:hover #link2 {
     -webkit-transform: translate(-30px, -155px);
     -moz-transform: translate(-30px, -155px);
@@ -62,9 +61,8 @@
     -o-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
-    background: transparent;
-    width: 80px;
-    height: 80px; }
+    width: 81px;
+    height: 81px; }
   #logo-container:hover #link3 {
     -webkit-transform: translate(150px, -155px);
     -moz-transform: translate(150px, -155px);
@@ -76,9 +74,8 @@
     -o-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
-    background: transparent;
-    width: 80px;
-    height: 80px; }
+    width: 81px;
+    height: 81px; }
   #logo-container:hover #link4 {
     -webkit-transform: translate(150px, -35px);
     -moz-transform: translate(150px, -35px);
@@ -90,9 +87,8 @@
     -o-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
-    background: transparent;
-    width: 80px;
-    height: 80px; }
+    width: 81px;
+    height: 81px; }
   #logo-container:hover #link5 {
     -webkit-transform: translate(150px, 85px);
     -moz-transform: translate(150px, 85px);
@@ -104,9 +100,8 @@
     -o-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
-    background: transparent;
-    width: 80px;
-    height: 80px; }
+    width: 81px;
+    height: 81px; }
   #logo-container:hover #link6 {
     -webkit-transform: translate(-30px, 85px);
     -moz-transform: translate(-30px, 85px);
@@ -118,9 +113,8 @@
     -o-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
-    background: transparent;
-    width: 80px;
-    height: 80px; }
+    width: 81px;
+    height: 81px; }
   #logo-container:hover #link7 {
     -webkit-transform: translate(-215px, 85px);
     -moz-transform: translate(-215px, 85px);
@@ -132,9 +126,8 @@
     -o-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
-    background: transparent;
-    width: 80px;
-    height: 80px; }
+    width: 81px;
+    height: 81px; }
   #logo-container:hover #link8 {
     -webkit-transform: translate(-215px, -35px);
     -moz-transform: translate(-215px, -35px);
@@ -146,12 +139,11 @@
     -o-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
-    background: transparent;
-    width: 80px;
-    height: 80px; }
+    width: 81px;
+    height: 81px; }
 
 #logo {
-  margin-top: 45px;
+  margin-top: 150px;
   width: 250px;
   height: 125px; }
 
@@ -163,14 +155,13 @@
   border-radius: 20px;
   position: fixed;
   margin-top: -70px;
-  margin-left: 190px;
+  margin-left: 240px;
   width: 20px;
   height: 20px;
-  background: #0099FF;
   border: 4px solid #0099FF;
   z-index: 1; }
   #link1:hover, #link2:hover, #link3:hover, #link4:hover, #link5:hover, #link6:hover, #link7:hover, #link8:hover {
-    color: #000; }
+    opacity: 1 !important; }
 
 #link1 {
   -webkit-transition-delay: 0.1s;
